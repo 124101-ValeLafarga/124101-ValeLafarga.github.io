@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Nuzo</title>
+<style>
+
+h2 {
+color: white;
+font-family: Helvetica;
+}
+
+div {background-color:#0E7DAB;
+padding: 15px;
+}
+
+input{
+width:80%;
+padding:9px;
+margin:5px;
+}
+
+.omg{
+background-color:#1399CF;
+color:white;
+font-size:15;
+}
+
+.uwu{color:white;
+}
+
+</style>
+</head>
+
+<body style="background-color:#028DC6;">
+<center>
+	<img src="https://mayrallc.github.io/IMG_0302.png" height="150">
+<div>
+	<h2>Bienvenido</h2>
+<form>
+
+	<input type="text" name="correo" placeholder="Email o matricula">
+    <br>
+    <input type="password" name="contra" placeholder="Contraseña">
+    <br>
+    <input type="submit" value="Entrar" class="omg">
+    <br>
+    <a href=# class="uwu">¿Olvidaste tu contraseña?</a>
+    
+</form>
+</div>
+
+</center>
+</body>
+</html>
