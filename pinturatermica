@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Vivienda Eficiente</title>
+
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    /* NAV */
+    nav {
+        background: #1f4e5f;
+        padding: 15px;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        z-index: 1000;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        margin: 0 15px;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+    }
+
+    nav ul li a:hover {
+        color: #90e0ef;
+    }
+
+    
+    header {
+        height: 250px;
+        background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: white;
+        position: relative;
+    }
+
+    section {
+        padding: 80px 20px;
+        max-width: 900px;
+        margin: auto;
+    }
+
+    h2 {
+        color: #1f4e5f;
+    }
+</style>
+
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+    <ul>
+        <li><a href="#intro">Introducción</a></li>
+        <li><a href="#modelo">Modelo</a></li>
+        <li><a href="#materiales">Materiales</a></li>
+        <li><a href="#conclusion">Conclusión</a></li>
+    </ul>
+</nav>
+
+<!--HEADER-->
+<header>
+    <h1>Vivienda Eficiente y Sustentable</h1>
+</header>
+
+<!-- CONTENIDO -->
+<section id="intro">
+    <h2>Introducción</h2>
+    <p>Este proyecto busca diseñar una vivienda eficiente utilizando materiales térmicos que reduzcan el calor interior.</p>
+</section>
