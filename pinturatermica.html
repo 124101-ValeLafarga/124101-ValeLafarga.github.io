@@ -1,3 +1,4 @@
+```html
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -5,77 +6,87 @@
 <title>Vivienda Eficiente</title>
 
 <style>
-    body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-        background: #C6D3F0;
-}
 
-    /* NAV */
-    nav {
-        background: #1f4e5f;
-        padding: 15px;
-        position: fixed;
-        width: 100%;
-        top: 0;
-        z-index: 1000;
-    }
-
-    nav ul {
-        list-style: none;
-        display: flex;
-        justify-content: center;
-        margin: 0;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin: 0 15px;
-    }
-
-    nav ul li a {
-        color: white;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-    nav ul li a:hover {
-        color: #90e0ef;
-    }
-
-    
-    header {
-        height: 250px;
-        background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-        color: white;
-        position: relative;
-    }
-
-   section {
-        background: white;
-        margin: 30px auto;
-        padding: 25px;
-        width: 80%;
-        border-radius: 15px;
-        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-}
-
-    h2 {
-        color: #1f4e5f;
-    }
-
+body{
+    margin:0;
     padding:20px;
+    font-family:Arial, sans-serif;
+    background:#C6D3F0;
 }
 
+/* NAV */
+nav{
+    background:#1f4e5f;
+    padding:15px;
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    z-index:1000;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    justify-content:center;
+    margin:0;
+    padding:0;
+}
+
+nav ul li{
+    margin:0 15px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#90e0ef;
+}
+
+/* HEADER */
+header{
+    margin-top:70px;
+    height:250px;
+    background:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center/cover;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+    border-radius:15px;
+}
+
+header h1{
+    background:rgba(0,0,0,0.5);
+    padding:15px 25px;
+    border-radius:10px;
+}
+
+/* SECCIONES */
+section{
+    background:white;
+    margin:30px auto;
+    padding:25px;
+    width:80%;
+    border-radius:15px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}
+
+h2{
+    color:#1f4e5f;
+}
+
+/* TABLA */
 table{
     border-collapse:collapse;
     width:500px;
     background:white;
     border:2px solid #3f6f5c;
+    margin:auto;
 }
 
 th{
@@ -101,7 +112,7 @@ tr:nth-child(even) td{
 </style>
 
 </head>
-<center>
+
 <body>
 
 <!-- NAV -->
@@ -109,134 +120,176 @@ tr:nth-child(even) td{
     <ul>
         <li><a href="#intro">Introducción</a></li>
         <li><a href="#materiales">Materiales</a></li>
-        <li><a href="#material aislante">Material aislante</a></li>
+        <li><a href="#aislante">Material aislante</a></li>
         <li><a href="#objetivo">Objetivo</a></li>
-         <li><a href="#resultados del experimento">Resultados del experimento</a></li>
-           <li><a href="#observacion grupal">Observación grupal</a></li>
-    <li><a href="#conclusion">Conculsión</a></li>
-   </ul>
+        <li><a href="#resultados">Resultados</a></li>
+        <li><a href="#observacion">Observación grupal</a></li>
+        <li><a href="#conclusion">Conclusión</a></li>
+    </ul>
 </nav>
 
-<!--HEADER-->
+<!-- HEADER -->
 <header>
-    
-   <h1>Vivienda Eficiente y Sustentable</h1>
+    <h1>Vivienda Eficiente y Sustentable</h1>
 </header>
 
-<!-- CONTENIDO -->
+<!-- INTRO -->
 <section id="intro">
     <h2>Introducción</h2>
-    <p>El presente proyecto tiene como finalidad analizar los cambios de temperatura en viviendas tipo Infonavit y comprobar si el uso de materiales térmicos puede mejorar las condiciones de temperatura dentro del hogar. Para ello, se construyeron dos maquetas: una casa convencional y otra con aislante térmico elaborado con pintura térmica. Posteriormente, se registraron las temperaturas de ambas viviendas durante diferentes horas del día para comparar sus resultados. <br> <br>
-Este proyecto surgió debido a las altas temperaturas que se presentan en muchas viviendas de interés social, especialmente en zonas donde el calor es intenso durante gran parte del año. Además, se investigó el costo y funcionamiento de la pintura térmica para conocer si realmente puede ser una opción eficiente para las casas.
-</p>
+
+    <p>
+    El presente proyecto tiene como finalidad analizar los cambios de temperatura en viviendas tipo Infonavit y comprobar si el uso de materiales térmicos puede mejorar las condiciones de temperatura dentro del hogar. Para ello, se construyeron dos maquetas: una casa convencional y otra con aislante térmico elaborado con pintura térmica.
+    </p>
+
+    <p>
+    Posteriormente, se registraron las temperaturas de ambas viviendas durante diferentes horas del día para comparar sus resultados.
+    </p>
+
+    <p>
+    Este proyecto surgió debido a las altas temperaturas que se presentan en muchas viviendas de interés social, especialmente en zonas donde el calor es intenso durante gran parte del año.
+    </p>
+
 </section>
 
-<!-- CONTENIDO -->
+<!-- MATERIALES -->
 <section id="materiales">
+
     <h2>Materiales</h2>
-    <p>Tabla roca
-    <br>
-Yeso 
-<br>
-Papel cascarón
-<br>
-Material aislante
-</p>
+
+    <p>
+    Tabla roca<br>
+    Yeso<br>
+    Papel cascarón<br>
+    Material aislante
+    </p>
+
 </section>
 
-<!-- CONTENIDO -->
-<section id="material aislante">
+<!-- AISLANTE -->
+<section id="aislante">
+
     <h2>Material aislante</h2>
-    <p>La pintura térmica es un recubrimiento especial que reduce la transferencia de calor en techos y paredes. Contiene materiales aislantes que reflejan la radiación solar y disminuyen la absorción de calor.</p>
+
+    <p>
+    La pintura térmica es un recubrimiento especial que reduce la transferencia de calor en techos y paredes. Contiene materiales aislantes que reflejan la radiación solar y disminuyen la absorción de calor.
+    </p>
+
 </section>
 
-<!-- CONTENIDO -->
+<!-- OBJETIVO -->
 <section id="objetivo">
+
     <h2>Objetivo</h2>
-    <p>El propósito principal de este proyecto es diseñar y planificar la construcción de una vivienda tipo Infonavit eficiente y sustentable. Para lograrlo, se busca integrar los conocimientos adquiridos en la materia, combinando el modeladomatemático para el diseño de los espacios y el análisis de ingeniería de materiales para optimizar el confort de la casa.
-</p>
+
+    <p>
+    El propósito principal de este proyecto es diseñar y planificar la construcción de una vivienda tipo Infonavit eficiente y sustentable. Para lograrlo, se busca integrar los conocimientos adquiridos en la materia, combinando el modelado matemático para el diseño de los espacios y el análisis de ingeniería de materiales para optimizar el confort de la casa.
+    </p>
+
 </section>
 
+<!-- RESULTADOS -->
+<section id="resultados">
 
-<!-- CONTENIDO -->
-<section id="resultados del experimento">
     <h2>Resultados del experimento</h2>
-    <p>Los resultados obtenidos muestran que la casa con aislante térmico presentó temperaturas menores en comparación con la vivienda convencional durante la mayor parte del experimento.<br><br>
-Las diferencias fueron más notorias en las horas donde hubo mayor exposición solar, especialmente entre las 9:00 y las 12:00 horas. Esto demuestra que la pintura térmica ayudó a disminuir la absorción de calor.<br><br>
-También se observó que la temperatura en la casa con aislante aumentó de manera más lenta y estable, mientras que la vivienda convencional presentó cambios más bruscos de temperatura
-</p>
 
-<table>
+    <p>
+    Los resultados obtenidos muestran que la casa con aislante térmico presentó temperaturas menores en comparación con la vivienda convencional durante la mayor parte del experimento.
+    </p>
 
-<tr>
-    <th>HORAS</th>
-    <th>CASA SIN MATERIAL<br>AISLANTE<br>(TEMP ºC)</th>
-    <th>CASA CON MATERIAL<br>AISLANTE<br>(TEMP ºC)</th>
-</tr>
+    <p>
+    Las diferencias fueron más notorias en las horas donde hubo mayor exposición solar, especialmente entre las 9:00 y las 12:00 horas.
+    </p>
 
-<tr>
-    <td>7:00</td>
-    <td>23.4º</td>
-    <td>23.2º</td>
-</tr>
+    <p>
+    También se observó que la temperatura en la casa con aislante aumentó de manera más lenta y estable.
+    </p>
 
-<tr>
-    <td>8:00</td>
-    <td>25º</td>
-    <td>24º</td>
-</tr>
+    <br>
 
-<tr>
-    <td>9:00</td>
-    <td>30º</td>
-    <td>27.8º</td>
-</tr>
+    <table>
 
-<tr>
-    <td>10:00</td>
-    <td>29.3º</td>
-    <td>26.8º</td>
-</tr>
+        <tr>
+            <th>HORAS</th>
+            <th>CASA SIN MATERIAL AISLANTE (TEMP ºC)</th>
+            <th>CASA CON MATERIAL AISLANTE (TEMP ºC)</th>
+        </tr>
 
-<tr>
-    <td>11:00</td>
-    <td>32.3º</td>
-    <td>31º</td>
-</tr>
+        <tr>
+            <td>7:00</td>
+            <td>23.4º</td>
+            <td>23.2º</td>
+        </tr>
 
-<tr>
-    <td>12:00</td>
-    <td>36.9º</td>
-    <td>34.7º</td>
-</tr>
+        <tr>
+            <td>8:00</td>
+            <td>25º</td>
+            <td>24º</td>
+        </tr>
 
-<tr>
-    <td>13:00</td>
-    <td>32.8º</td>
-    <td>31.8º</td>
-</tr>
+        <tr>
+            <td>9:00</td>
+            <td>30º</td>
+            <td>27.8º</td>
+        </tr>
 
-<tr>
-    <td>14:00</td>
-    <td>33º</td>
-    <td>32.2º</td>
-</tr>
+        <tr>
+            <td>10:00</td>
+            <td>29.3º</td>
+            <td>26.8º</td>
+        </tr>
 
-</table>
+        <tr>
+            <td>11:00</td>
+            <td>32.3º</td>
+            <td>31º</td>
+        </tr>
+
+        <tr>
+            <td>12:00</td>
+            <td>36.9º</td>
+            <td>34.7º</td>
+        </tr>
+
+        <tr>
+            <td>13:00</td>
+            <td>32.8º</td>
+            <td>31.8º</td>
+        </tr>
+
+        <tr>
+            <td>14:00</td>
+            <td>33º</td>
+            <td>32.2º</td>
+        </tr>
+
+    </table>
 
 </section>
 
+<!-- OBSERVACIÓN -->
+<section id="observacion">
 
-<!-- CONTENIDO -->
-<section id="observacion grupal">
     <h2>Observación grupal</h2>
-    <p>En la actualidad, el uso de materiales térmicos en la construcción es de vital importancia, especialmente en zonas donde la temperatura exterior es alta (llegando a los 35°C). Implementar materiales como pintura térmica, yeso y aislantes ayuda a reducir drásticamente la transferencia de calor hacia el interior de la vivienda. Esto permite mantener una temperatura interna agradable de 24°C, lo que se traduce en un mayor confort para los habitantes y un ahorro energético y económico muy significativo, al disminuir el uso constante de aire acondicionado o ventiladores.</p>
+
+    <p>
+    En la actualidad, el uso de materiales térmicos en la construcción es de vital importancia, especialmente en zonas donde la temperatura exterior es alta. Implementar materiales como pintura térmica, yeso y aislantes ayuda a reducir la transferencia de calor hacia el interior de la vivienda.
+    </p>
+
 </section>
 
-<!-- CONTENIDO -->
+<!-- CONCLUSIÓN -->
 <section id="conclusion">
+
     <h2>Conclusión</h2>
+
     <h3>¿Es rentable utilizar materiales térmicos en la construcción de una vivienda?</h3>
-    <p> Sí, es completamente rentable a mediano y largo plazo. Aunque la inversión inicial puede ser ligeramente superior a la de los materiales de construcción tradicionales (como se observa en el presupuesto de la pintura térmica de aproximadamente $14,500 MXN), este gasto se recupera mediante el ahorro energético continuo. Al mantener la casa más fresca de manera natural, se reduce de forma drástica la necesidad de encender aires acondicionados o ventiladores, lo que disminuye significativamente el costo de los recibos de electricidad mes con mes.
-</p>
+
+    <p>
+    Sí, es completamente rentable a mediano y largo plazo. Aunque la inversión inicial puede ser ligeramente superior a la de los materiales tradicionales, este gasto se recupera mediante el ahorro energético continuo.
+    </p>
+
 </section>
+
+</body>
+</html>
+```
