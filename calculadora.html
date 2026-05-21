@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Calculadora Dramática</title>
+
+  <style>
+    body{
+      background:#111;
+      color:white;
+      font-family:Arial;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      height:100vh;
+    }
+
+    .calc{
+      background:#1e1e1e;
+      padding:20px;
+      border-radius:20px;
+      width:300px;
+      box-shadow:0 0 20px rgba(0,0,0,0.5);
+    }
+
+    input{
+      width:100%;
+      height:50px;
+      font-size:24px;
+      margin-bottom:15px;
+      border:none;
+      border-radius:10px;
+      padding:10px;
+      background:#2b2b2b;
+      color:white;
+    }
+
+    button{
+      width:65px;
+      height:65px;
+      margin:3px;
+      border:none;
+      border-radius:15px;
+      font-size:20px;
+      cursor:pointer;
+      background:#333;
+      color:white;
+      transition:0.2s;
+    }
+
+    button:hover{
+      background:#555;
+      transform:scale(1.05);
+    }
+
+    .igual{
+      background:#7c3aed;
+    }
+
+    .igual:hover{
+      background:#9f67ff;
+    }
+
+    #mensaje{
+      margin-top:10px;
+      font-size:14px;
+      color:#ffb3b3;
+      min-height:20px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="calc">
+  <input type="text" id="pantalla" readonly>
+
+  <div>
+    <button onclick="agregar('7')">7</button>
+    <button onclick="agregar('8')">8</button>
+    <button onclick="agregar('9')">9</button>
+    <button onclick="agregar('/')">÷</button>
+
+    <button onclick="agregar('4')">4</button>
+    <button onclick="agregar('5')">5</button>
+    <button onclick="agregar('6')">6</button>
+    <button onclick="agregar('*')">×</button>
+
+    <button onclick="agregar('1')">1</button>
+    <button onclick="agregar('2')">2</button>
+    <button onclick="agregar('3')">3</button>
+    <button onclick="agregar('-')">−</button>
+
+    <button onclick="agregar('0')">0</button>
+    <button onclick="limpiar()">C</button>
+    <button class="igual" onclick="calcular()">=</button>
+    <button onclick="agregar('+')">+</button>
+  </div>
+
+  <div id="mensaje"></div>
+</div>
+
+<script>
+  const pantalla = document.getElementById("pantalla");
+  const mensaje = document.getElementById("mensaje");
+
+  const frases = [
+    "Las matemáticas lloraron un poco.",
+    "Tu calculadora merece terapia.",
+    "Eso salió mejor de lo esperado.",
+    "Ni Einstein se atrevió a tanto.",
+    "Excelente. El universo sigue estable.",
+    "Tu promedio acaba de sobrevivir."
+  ];
+
+  function agregar(valor){
+    pantalla.value += valor;
+    mensaje.textContent = "";
+  }
+
+  function limpiar(){
+    pantalla.value = "";
+    mensaje.textContent = "Memoria borrada. Como mis ganas de estudiar.";
+  }
+
+  function calcular(){
+    try{
+      pantalla.value = eval(pantalla.value);
+
+      let random =
+        frases[Math.floor(Math.random() * frases.length)];
+
+      mensaje.textContent = random;
+
+    }catch{
+      mensaje.textContent =
+        "Eso no era una operación. Era un ritual.";
+    }
+  }
+</script>
+
+</body>
+</html>
